@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eike Düvel, philosopher</title>
+<meta name="description" content="Eike Düvel, philosopher at the Karlsruhe Institute of Technology, working on risk, responsibility, climate ethics and AI in democratic decision-making.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..600;1,7..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #fcfcfa;
+    --ink: #1c232b;
+    --muted: #5b6672;
+    --line: #dde2e6;
+    --storm: #2a4a70;
+    --tint: #e9eff5;
+    --todo: #fff4d6;
+    --serif: "Literata", Georgia, "Times New Roman", serif;
+    --sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151a20;
+      --ink: #e6e9ec;
+      --muted: #9aa5b1;
+      --line: #2c343d;
+      --storm: #9dbbe0;
+      --tint: #22303f;
+      --todo: #4a3f1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+  }
+  a { color: var(--storm); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--storm); outline-offset: 3px; border-radius: 2px; }
+
+  .page { max-width: 74rem; margin: 0 auto; padding: 4rem 2rem 2.5rem; }
+
+  /* Two independent columns on wide screens */
+  .cols {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    column-gap: 4.5rem;
+    align-items: start;
+  }
+
+  /* Intro */
+  h1 {
+    font-weight: 500;
+    font-size: clamp(2.4rem, 4.4vw, 3.3rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+    font-variation-settings: "opsz" 72;
+  }
+  .position { font-family: var(--sans); color: var(--muted); font-size: 1rem; margin: 0 0 1.3rem; line-height: 1.45; max-width: 34rem; }
+  .summary { margin: 0 0 1.3rem; max-width: 38rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; margin: 0; padding: 0; list-style: none; font-family: var(--sans); font-size: 0.98rem; }
+
+  .photo { margin: 0 0 2.4rem; }
+  .photo img {
+    display: block;
+    width: 100%;
+    max-width: 17rem;
+    height: auto;
+    aspect-ratio: 527 / 545;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  /* Sections */
+  section { margin-top: 2.8rem; }
+  .side > section:first-of-type { margin-top: 0; }
+  h2 {
+    font-weight: 500;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    font-variation-settings: "opsz" 36;
+  }
+
+  /* Paper status groups: the circle fills as a paper nears publication */
+  .status {
+    display: flex; align-items: center; gap: 0.55rem;
+    font-family: var(--sans); font-weight: 500; font-size: 0.95rem;
+    color: var(--muted);
+    margin: 1.6rem 0 0.7rem;
+  }
+  h2 + .status { margin-top: 0; }
+  .status svg { width: 0.95rem; height: 0.95rem; flex: none; }
+  .status svg circle { stroke: var(--storm); }
+  .status svg .fill { fill: var(--storm); }
+
+  .entries { list-style: none; margin: 0; padding: 0; }
+  .entries > li { margin: 0 0 0.85rem; }
+  .entries > li:last-child { margin-bottom: 0; }
+  .title { display: block; line-height: 1.35; font-weight: 500; }
+  a.title { text-decoration: none; }
+  a.title:hover { text-decoration: underline; }
+  .meta { display: block; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); line-height: 1.45; margin-top: 0.15rem; }
+  .desc { display: block; margin-top: 0.15rem; }
+  .subtitle { display: block; font-style: italic; line-height: 1.4; margin-top: 0.1rem; }
+  .role { display: block; margin-top: 0.2rem; }
+  .projects > li { margin-bottom: 1.15rem; }
+  .projects .meta { margin-top: 0.05rem; }
+
+  .plain { list-style: none; margin: 0; padding: 0; }
+  .plain > li { margin: 0 0 0.7rem; }
+  .plain > li:last-child { margin-bottom: 0; }
+  .dated > li { display: grid; grid-template-columns: 4.8rem minmax(0, 1fr); column-gap: 0.9rem; }
+  .when { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 0.17rem; }
+
+  p.note { margin: 0 0 0.8rem; }
+  .teach > li { margin-bottom: 0.55rem; }
+  .teach .title { font-weight: 400; }
+  p.supervision { margin-top: 1rem; }
+  p.note:last-child { margin-bottom: 0; }
+
+  .todo { background: var(--todo); border-radius: 3px; padding: 0 0.25rem; font-style: italic; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 1.2rem; margin-top: 3.5rem; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
+
+  /* One column on narrow screens, in reading order */
+  @media (max-width: 860px) {
+    .page { padding: 2.5rem 1.4rem 2rem; }
+    .cols { display: flex; flex-direction: column; }
+    .main, .side { display: contents; }
+    .photo { order: 1; margin-bottom: 1.6rem; }
+    .photo img { max-width: 9rem; }
+    .intro { order: 2; }
+    #papers { order: 3; margin-top: 2.6rem; }
+    #projects { order: 4; }
+    #public { order: 5; }
+    #teaching { order: 6; }
+    #talks { order: 7; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="cols">
+
+    <div class="main">
+      <header class="intro">
+        <h1>Eike Düvel</h1>
+        <p class="position">Postdoctoral researcher, Institute for Technology Assessment and Systems Analysis (ITAS), Karlsruhe Institute of Technology</p>
+        <p class="summary">I work in ethics and political philosophy. My research is on the ethics of risk, climate justice, and AI and democracy.</p>
+        <ul class="links">
+          <li><a href="mailto:eike.duevel@gmail.com">eike.duevel@gmail.com</a></li>
+          <li><a href="cv.pdf">CV (PDF)</a></li>
+          <li><a href="https://philpeople.org/profiles/eike-duvel">PhilPeople</a></li>
+        </ul>
+      </header>
+
+      <section id="projects" aria-labelledby="h-projects">
+        <h2 id="h-projects">Projects</h2>
+        <ul class="entries projects">
+          <li>
+            <span class="title">Energy System Design</span>
+            <span class="subtitle">Designing the energy system of the future</span>
+            <span class="meta">Helmholtz research programme</span>
+            <span class="role">Lead on ethical aspects; writing team for the next funding period</span>
+          </li>
+          <li>
+            <span class="title">Methane Removal</span>
+            <span class="subtitle">A critical assessment and research agenda</span>
+            <span class="meta">Helmholtz Forum Earth and Environment</span>
+            <span class="role">Lead on the ethics chapter of the synthesis paper</span>
+          </li>
+          <li>
+            <span class="title">TwinRISE</span>
+            <span class="subtitle">Trusted AI-generated digital twins for research infrastructures and scientific excellence</span>
+            <span class="meta">Horizon Europe, from 2027</span>
+            <span class="role">Postdoctoral researcher on ethical, legal and social aspects</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="public" aria-labelledby="h-public">
+        <h2 id="h-public">Public philosophy</h2>
+        <ul class="plain dated">
+          <li><span class="when">2026</span><span>Justice in the shadow of uncertainty: Whom should we save? Public lecture and discussion, Wissenschaft &amp; Weisheit series, University of Zurich (in German).</span></li>
+          <li><span class="when">2024</span><span>Commentary on the German Ethics Council’s statement on climate justice, with Laura García Portela, for the Science Media Center. Quoted in Süddeutsche Zeitung.</span></li>
+          <li><span class="when">2023</span><span>Fair public transport. Citizens’ workshop at technik.kontrovers, Karlsruhe.</span></li>
+          <li><span class="when">2016–18</span><span>Founding member and editor of the blog Climate Footnotes.</span></li>
+        </ul>
+      </section>
+
+      <section id="teaching" aria-labelledby="h-teaching">
+        <h2 id="h-teaching">Teaching</h2>
+        <p class="note">I teach ethics and political philosophy at BA, MA and PhD level, in German and English. Much of my teaching brings ethics into courses for students in engineering and the natural sciences.</p>
+        <ul class="entries teach">
+          <li><span class="title">Philosophical perspectives on risky technologies</span><span class="meta">PhD seminar, ITAS, KIT, 2024–2026</span></li>
+          <li><span class="title">The political philosophy of artificial intelligence</span><span class="meta">Seminar, KIT, 2024</span></li>
+          <li><span class="title">Ethics and resource cycles</span><span class="meta">Seminar, KIT, 2024</span></li>
+          <li><span class="title">Ethics modules in energy and environment, environmental communication and financial mathematics</span><span class="meta">Co-teaching, KIT, 2026</span></li>
+          <li><span class="title">Contractualism and risk</span><span class="meta">Guest lecture, Erasmus University Rotterdam, 2026</span></li>
+          <li><span class="title">Theories of intergenerational justice</span><span class="meta">Seminar, University of Graz, 2018</span></li>
+        </ul>
+        <p class="note supervision">I supervise PhD projects on the ethics of battery raw material mining, the moral agency of AI systems and the resilience of energy systems.</p>
+      </section>
+    </div>
+
+    <div class="side">
+      <figure class="photo">
+        <img src="photo.jpg" alt="Portrait of Eike Düvel" width="527" height="545">
+      </figure>
+
+      <section id="papers" aria-labelledby="h-papers">
+        <h2 id="h-papers">Papers</h2>
+
+        <h3 class="status">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" class="fill" stroke-width="1.5"/></svg>
+          Published and forthcoming
+        </h3>
+        <ul class="entries">
+          <li>
+            <span class="title">Non-identity and compensation for climate change</span>
+            <span class="meta">With Laura García Portela. Utilitas, forthcoming.</span>
+          </li>
+          <li>
+            <a class="title" href="https://doi.org/10.1007/s10677-026-10548-w">Fairness in emissions accounting: A moral responsibility approach</a>
+            <span class="meta">With Laura García Portela. Ethical Theory and Moral Practice, 2026.</span>
+          </li>
+          <li>
+            <a class="title" href="https://doi.org/10.1186/s13705-025-00560-w">The obligation to long-term governance: A philosophical analysis</a>
+            <span class="meta">With Michael W. Schmidt. Energy, Sustainability and Society 16:3, 2026.</span>
+          </li>
+          <li>
+            <a class="title" href="https://doi.org/10.1002/wcc.910">The ethics of climate change loss and damage</a>
+            <span class="meta">With Laura García Portela. WIREs Climate Change 15(6), 2024.</span>
+          </li>
+          <li>
+            <a class="title" href="https://www.routledge.com/Environmental-Human-Rights-A-Political-Theory-Perspective/Oksanen-Dodsworth-ODoherty/p/book/9780367244637">Human rights-based precautionary approaches and risk imposition in the context of climate change</a>
+            <span class="meta">In Oksanen, Dodsworth and O’Doherty (eds.), Environmental Human Rights. Routledge, 2018.</span>
+          </li>
+          <li>
+            <a class="title" href="https://doi.org/10.2143/EP.25.3.3285421">Ethics and risks: Approaches and issues</a>
+            <span class="meta">With Adriana Placani and Thomas Pölzler. Introduction to the special issue Ethics and Risks, Ethical Perspectives 25(3), 2018. <a href="https://hiw.kuleuven.be/ethical-perspectives/archived.articles/ep-25-3-full-issue.pdf/@@download/file/EP%2025(3)%20full%20issue.pdf">Free version</a></span>
+          </li>
+        </ul>
+
+        <h3 class="status">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" class="fill"/></svg>
+          Under review
+        </h3>
+        <ul class="entries">
+          <li><span class="title">Minimizing complaints and saving identified lives</span></li>
+          <li><span class="title">Can democracy be delegated? Digital twins and the value of public deliberation</span></li>
+        </ul>
+
+        <h3 class="status">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke-width="1.5"/></svg>
+          In preparation
+        </h3>
+        <ul class="entries">
+          <li>
+            <span class="title">Emissions accounting for AI research emissions</span>
+            <span class="meta">With Theresa Willem, Leo Kaindl, Michael Schmidt and Marie Piraud.</span>
+          </li>
+          <li><span class="title">Making sense of resilience: Energy policy and normative trade-offs</span></li>
+          <li><span class="title">Stranded assets and legitimate expectations</span></li>
+          <li>
+            <span class="title">Contractualism and risk</span>
+            <span class="meta">Book project.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="talks" aria-labelledby="h-talks">
+        <h2 id="h-talks">Recent talks</h2>
+        <ul class="plain dated">
+          <li><span class="when">Nov 2026</span><span>Can democracy be delegated? ENCODE 2026, Rotterdam.</span></li>
+          <li><span class="when">Sep 2026</span><span>Can democracy be delegated? MANCEPT Workshops, Manchester.</span></li>
+          <li><span class="when">Jun 2026</span><span>AI and the value of public deliberation. Conference on Large-Scale AI Risks, KU Leuven.</span></li>
+          <li><span class="when">Sep 2025</span><span>The persisting relevance of the non-identity problem. GAP 12, Düsseldorf.</span></li>
+          <li><span class="when">Jan 2025</span><span>The not-so-minor difference claim. Climate Ethics above 1.5°C, Rotterdam.</span></li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+  <footer>Last updated November 2026.</footer>
+</main>
+</body>
+</html>

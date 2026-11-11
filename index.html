@@ -17,6 +17,7 @@
     --storm: #2a4a70;
     --tint: #e9eff5;
     --todo: #fff4d6;
+    --rule: #b8c5d3;
     --serif: "Literata", Georgia, "Times New Roman", serif;
     --sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
   }
@@ -29,6 +30,7 @@
       --storm: #9dbbe0;
       --tint: #22303f;
       --todo: #4a3f1f;
+      --rule: #3f4e5f;
     }
   }
   * { box-sizing: border-box; }
@@ -113,8 +115,12 @@
   .desc { display: block; margin-top: 0.15rem; }
   .subtitle { display: block; font-style: italic; line-height: 1.4; margin-top: 0.1rem; }
   .role { display: block; margin-top: 0.2rem; }
-  .projects > li { margin-bottom: 1.15rem; }
-  .projects .meta { margin-top: 0.05rem; }
+  .projects { list-style: none; margin: 0; padding: 0; }
+  .projects > li { border-left: 2px solid var(--rule); padding: 0.05rem 0 0.15rem 1rem; margin: 0 0 1.5rem; }
+  .projects > li:last-child { margin-bottom: 0; }
+  .projects .title { font-size: 1.1rem; }
+  .projects .role { margin-top: 0.35rem; }
+  .projects .meta { margin-top: 0.2rem; }
 
   .plain { list-style: none; margin: 0; padding: 0; }
   .plain > li { margin: 0 0 0.7rem; }
@@ -123,8 +129,6 @@
   .when { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 0.17rem; }
 
   p.note { margin: 0 0 0.8rem; }
-  .teach > li { margin-bottom: 0.55rem; }
-  .teach .title { font-weight: 400; }
   p.supervision { margin-top: 1rem; }
   p.note:last-child { margin-bottom: 0; }
 
@@ -156,7 +160,7 @@
       <header class="intro">
         <h1>Eike Düvel</h1>
         <p class="position">Postdoctoral researcher, Institute for Technology Assessment and Systems Analysis (ITAS), Karlsruhe Institute of Technology</p>
-        <p class="summary">I work in ethics and political philosophy. My research is on the ethics of risk, climate justice, and AI and democracy.</p>
+        <p class="summary">I work in ethics and political philosophy, mainly on the ethics of risk, climate justice, and AI and democracy.</p>
         <ul class="links">
           <li><a href="mailto:eike.duevel@gmail.com">eike.duevel@gmail.com</a></li>
           <li><a href="cv.pdf">CV (PDF)</a></li>
@@ -166,24 +170,24 @@
 
       <section id="projects" aria-labelledby="h-projects">
         <h2 id="h-projects">Projects</h2>
-        <ul class="entries projects">
+        <ul class="projects">
           <li>
             <span class="title">Energy System Design</span>
             <span class="subtitle">Designing the energy system of the future</span>
-            <span class="meta">Helmholtz research programme</span>
             <span class="role">Lead on ethical aspects; writing team for the next funding period</span>
+            <span class="meta">Helmholtz research programme</span>
           </li>
           <li>
             <span class="title">Methane Removal</span>
             <span class="subtitle">A critical assessment and research agenda</span>
-            <span class="meta">Helmholtz Forum Earth and Environment</span>
             <span class="role">Lead on the ethics chapter of the synthesis paper</span>
+            <span class="meta">Helmholtz Forum Earth and Environment</span>
           </li>
           <li>
             <span class="title">TwinRISE</span>
             <span class="subtitle">Trusted AI-generated digital twins for research infrastructures and scientific excellence</span>
-            <span class="meta">Horizon Europe, from 2027</span>
             <span class="role">Postdoctoral researcher on ethical, legal and social aspects</span>
+            <span class="meta">Horizon Europe, from 2027</span>
           </li>
         </ul>
       </section>
@@ -201,13 +205,13 @@
       <section id="teaching" aria-labelledby="h-teaching">
         <h2 id="h-teaching">Teaching</h2>
         <p class="note">I teach ethics and political philosophy at BA, MA and PhD level, in German and English. Much of my teaching brings ethics into courses for students in engineering and the natural sciences.</p>
-        <ul class="entries teach">
-          <li><span class="title">Philosophical perspectives on risky technologies</span><span class="meta">PhD seminar, ITAS, KIT, 2024–2026</span></li>
-          <li><span class="title">The political philosophy of artificial intelligence</span><span class="meta">Seminar, KIT, 2024</span></li>
-          <li><span class="title">Ethics and resource cycles</span><span class="meta">Seminar, KIT, 2024</span></li>
-          <li><span class="title">Ethics modules in energy and environment, environmental communication and financial mathematics</span><span class="meta">Co-teaching, KIT, 2026</span></li>
-          <li><span class="title">Contractualism and risk</span><span class="meta">Guest lecture, Erasmus University Rotterdam, 2026</span></li>
-          <li><span class="title">Theories of intergenerational justice</span><span class="meta">Seminar, University of Graz, 2018</span></li>
+        <ul class="plain dated">
+          <li><span class="when">2024–26</span><span>Philosophical perspectives on risky technologies. PhD seminar, ITAS, KIT.</span></li>
+          <li><span class="when">2026</span><span>Ethics modules in energy and environment, environmental communication and financial mathematics. Co-teaching, KIT.</span></li>
+          <li><span class="when">2026</span><span>Contractualism and risk. Guest lecture, Erasmus University Rotterdam.</span></li>
+          <li><span class="when">2024</span><span>The political philosophy of artificial intelligence. Seminar, KIT.</span></li>
+          <li><span class="when">2024</span><span>Ethics and resource cycles. Seminar, KIT.</span></li>
+          <li><span class="when">2018</span><span>Theories of intergenerational justice. Seminar, University of Graz.</span></li>
         </ul>
         <p class="note supervision">I supervise PhD projects on the ethics of battery raw material mining, the moral agency of AI systems and the resilience of energy systems.</p>
       </section>
@@ -253,15 +257,6 @@
         </ul>
 
         <h3 class="status">
-          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" class="fill"/></svg>
-          Under review
-        </h3>
-        <ul class="entries">
-          <li><span class="title">Minimizing complaints and saving identified lives</span></li>
-          <li><span class="title">Can democracy be delegated? Digital twins and the value of public deliberation</span></li>
-        </ul>
-
-        <h3 class="status">
           <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke-width="1.5"/></svg>
           In preparation
         </h3>
@@ -282,10 +277,10 @@
       <section id="talks" aria-labelledby="h-talks">
         <h2 id="h-talks">Recent talks</h2>
         <ul class="plain dated">
-          <li><span class="when">Nov 2026</span><span>Can democracy be delegated? ENCODE 2026, Rotterdam.</span></li>
-          <li><span class="when">Sep 2026</span><span>Can democracy be delegated? MANCEPT Workshops, Manchester.</span></li>
-          <li><span class="when">Jun 2026</span><span>AI and the value of public deliberation. Conference on Large-Scale AI Risks, KU Leuven.</span></li>
-          <li><span class="when">Sep 2025</span><span>The persisting relevance of the non-identity problem. GAP 12, Düsseldorf.</span></li>
+          <li><span class="when">Nov 2026</span><span>Can democracy be delegated? <a href="https://www.eur.nl/en/esphil/events/encode-closing-conference-2026-11-11">ENCODE closing conference</a>, Rotterdam.</span></li>
+          <li><span class="when">Sep 2026</span><span>Can democracy be delegated? <a href="https://documents.manchester.ac.uk/display.aspx?DocID=79930">MANCEPT Workshops</a>, Manchester.</span></li>
+          <li><span class="when">Jun 2026</span><span>AI and the value of public deliberation. <a href="https://lsair.eu/">Conference on Large-Scale AI Risks</a>, KU Leuven.</span></li>
+          <li><span class="when">Sep 2025</span><span>The persisting relevance of the non-identity problem. <a href="https://gap12.de/">GAP.12</a>, Düsseldorf.</span></li>
           <li><span class="when">Jan 2025</span><span>The not-so-minor difference claim. Climate Ethics above 1.5°C, Rotterdam.</span></li>
         </ul>
       </section>

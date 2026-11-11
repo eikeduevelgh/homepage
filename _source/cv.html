@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Eike Düvel, curriculum vitae</title>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..600;1,7..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c232b;
+    --muted: #5b6672;
+    --line: #dde2e6;
+    --storm: #2a4a70;
+    --serif: "Literata", Georgia, serif;
+    --sans: "Schibsted Grotesk", Arial, sans-serif;
+  }
+  @page { size: A4; margin: 18mm 20mm 20mm; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 9.4pt;
+    line-height: 1.45;
+    font-optical-sizing: auto;
+  }
+  a { color: var(--storm); text-decoration: none; }
+
+  header { margin-bottom: 6mm; }
+  h1 {
+    font-weight: 500;
+    font-size: 25pt;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 2.2mm;
+    font-variation-settings: "opsz" 72;
+  }
+  .position { font-family: var(--sans); color: var(--muted); font-size: 9.6pt; margin: 0 0 2.4mm; }
+  .contact { font-family: var(--sans); font-size: 9pt; margin: 0; display: flex; gap: 6mm; }
+
+  section { margin-top: 6.2mm; }
+  h2 {
+    font-weight: 500;
+    font-size: 12.5pt;
+    line-height: 1.2;
+    margin: 0 0 2.4mm;
+    padding-bottom: 1.4mm;
+    border-bottom: 0.6pt solid var(--line);
+    font-variation-settings: "opsz" 36;
+    break-after: avoid;
+  }
+
+  /* Dated rows: year column on the left, entry on the right */
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rows > li {
+    display: grid;
+    grid-template-columns: 21mm minmax(0, 1fr);
+    column-gap: 4mm;
+    margin: 0 0 1.9mm;
+    break-inside: avoid;
+  }
+  .rows > li:last-child { margin-bottom: 0; }
+  .when {
+    font-family: var(--sans); font-size: 8.4pt; color: var(--muted);
+    font-variant-numeric: tabular-nums; padding-top: 0.35mm;
+  }
+  .what { display: block; }
+  .t { font-weight: 500; }
+  .meta { display: block; font-family: var(--sans); font-size: 8.4pt; color: var(--muted); line-height: 1.4; margin-top: 0.3mm; }
+
+  /* Publication stages, with the same markers as the homepage */
+  .status {
+    display: flex; align-items: center; gap: 2mm;
+    font-family: var(--sans); font-weight: 500; font-size: 8.8pt; color: var(--muted);
+    margin: 4mm 0 2mm;
+    break-after: avoid;
+  }
+  h2 + .status { margin-top: 0; }
+  .status svg { width: 3.2mm; height: 3.2mm; flex: none; }
+  .status svg circle { stroke: var(--storm); }
+  .status svg .fill { fill: var(--storm); }
+  .pubs { list-style: none; margin: 0; padding: 0; }
+  .pubs > li { margin: 0 0 2mm; break-inside: avoid; }
+  .pubs > li:last-child { margin-bottom: 0; }
+
+  .block { margin: 0; }
+  .block + .block { margin-top: 1.6mm; }
+  .label { font-family: var(--sans); font-size: 8.4pt; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Eike Düvel</h1>
+  <p class="position">Postdoctoral researcher, Institute for Technology Assessment and Systems Analysis (ITAS), Karlsruhe Institute of Technology</p>
+  <p class="contact">
+    <a href="https://eikeduevel.com">eikeduevel.com</a>
+    <a href="mailto:eike.duevel@gmail.com">eike.duevel@gmail.com</a>
+    <a href="https://philpeople.org/profiles/eike-duvel">philpeople.org/profiles/eike-duvel</a>
+  </p>
+</header>
+
+<section>
+  <h2>Areas</h2>
+  <ul class="rows">
+    <li><span class="when">Specialisation</span><span class="what">Climate ethics, intergenerational justice, risk ethics</span></li>
+    <li><span class="when">Competence</span><span class="what">Normative theory, political philosophy, ethics of technology</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Positions</h2>
+  <ul class="rows">
+    <li><span class="when">2022–</span><span class="what"><span class="t">Postdoctoral researcher</span>, Institute for Technology Assessment and Systems Analysis, Karlsruhe Institute of Technology<span class="meta">Helmholtz research group Philosophy of engineering, technology assessment, and science</span></span></li>
+    <li><span class="when">2016–2019</span><span class="what"><span class="t">Research assistant</span>, Doctoral Program Climate Change, University of Graz<span class="meta">Funded by the Austrian Science Fund (FWF), the University of Graz and the federal state of Styria</span></span></li>
+    <li><span class="when">2011–2015</span><span class="what"><span class="t">Research assistant</span>, Institute of Philosophy, University of Göttingen<span class="meta">Chair of Prof. Holmer Steinfath</span></span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <ul class="rows">
+    <li><span class="when">2016–2021</span><span class="what"><span class="t">PhD in philosophy</span>, University of Graz, FWF Doctoral Program Climate Change and Department of Philosophy<span class="meta">Dissertation: Neither rights nor welfare: A contractualist account of risk imposition</span></span></li>
+    <li><span class="when">2010–2015</span><span class="what"><span class="t">MA in philosophy</span>, University of Göttingen<span class="meta">Thesis: Normativity, self-constitution and public reasons in Christine M. Korsgaard’s work</span></span></li>
+    <li><span class="when">2007–2010</span><span class="what"><span class="t">BA in philosophy and economics</span>, University of Bayreuth<span class="meta">Thesis: Pathologies of the free-will debate</span></span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Publications</h2>
+
+  <h3 class="status">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" class="fill" stroke-width="1.5"/></svg>
+    Published and forthcoming
+  </h3>
+  <ul class="pubs">
+    <li><span class="t">Non-identity and compensation for climate change</span><span class="meta">With Laura García Portela. Utilitas, forthcoming.</span></li>
+    <li><a class="t" href="https://doi.org/10.1007/s10677-026-10548-w">Fairness in emissions accounting: A moral responsibility approach</a><span class="meta">With Laura García Portela. Ethical Theory and Moral Practice, 2026.</span></li>
+    <li><a class="t" href="https://doi.org/10.1186/s13705-025-00560-w">The obligation to long-term governance: A philosophical analysis</a><span class="meta">With Michael W. Schmidt. Energy, Sustainability and Society 16:3, 2026.</span></li>
+    <li><a class="t" href="https://doi.org/10.1002/wcc.910">The ethics of climate change loss and damage</a><span class="meta">With Laura García Portela. WIREs Climate Change 15(6), e910, 2024.</span></li>
+    <li><a class="t" href="https://www.routledge.com/Environmental-Human-Rights-A-Political-Theory-Perspective/Oksanen-Dodsworth-ODoherty/p/book/9780367244637">Human rights-based precautionary approaches and risk imposition in the context of climate change</a><span class="meta">In Markku Oksanen, Ashley Dodsworth and Selina O’Doherty (eds.), Environmental Human Rights: A Political Theory Perspective. Routledge, 2018.</span></li>
+    <li><a class="t" href="https://doi.org/10.2143/EP.25.3.3285421">Ethics and risks: Approaches and issues</a><span class="meta">With Adriana Placani and Thomas Pölzler. Introduction to the special issue Ethics and Risks. Ethical Perspectives 25(3), 355–361, 2018.</span></li>
+  </ul>
+
+  <h3 class="status">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" class="fill"/></svg>
+    Under review
+  </h3>
+  <ul class="pubs">
+    <li><span class="t">Minimizing complaints and saving identified lives</span></li>
+    <li><span class="t">Can democracy be delegated? Digital twins and the value of public deliberation</span></li>
+  </ul>
+
+  <h3 class="status">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke-width="1.5"/></svg>
+    In preparation
+  </h3>
+  <ul class="pubs">
+    <li><span class="t">Emissions accounting for AI research emissions</span><span class="meta">With Theresa Willem, Leo Kaindl, Michael Schmidt and Marie Piraud.</span></li>
+    <li><span class="t">Making sense of resilience: Energy policy and normative trade-offs</span></li>
+    <li><span class="t">Stranded assets and legitimate expectations</span></li>
+    <li><span class="t">Contractualism and risk</span><span class="meta">Book project.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Research stays</h2>
+  <ul class="rows">
+    <li><span class="when">2025</span><span class="what"><span class="t">Utrecht University</span><span class="meta">Hosts: Joel Anderson and Jeroen Hopster. Funded by the Karlsruhe House of Young Scientists.</span></span></li>
+    <li><span class="when">2019</span><span class="what"><span class="t">University of California, Berkeley</span><span class="meta">Host: R. Jay Wallace. Funded by the FWF Doctoral Program Climate Change.</span></span></li>
+    <li><span class="when">2018</span><span class="what"><span class="t">Queen’s University, Kingston</span><span class="meta">Host: Rahul Kumar. Funded by the FWF Doctoral Program Climate Change.</span></span></li>
+    <li><span class="when">2009</span><span class="what"><span class="t">University of Delaware</span><span class="meta">Exchange semester. Host: Tom Powers. Funded by the exchange programme of the University of Bayreuth.</span></span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Funding</h2>
+  <ul class="rows">
+    <li><span class="when">2024</span><span class="what">KHYS Research Stay Grant, Karlsruhe House of Young Scientists, €10,000</span></li>
+    <li><span class="when">2023</span><span class="what">Helmholtz Initiative, Researchers at Risk Programme (GI-046), €63,187</span></li>
+    <li><span class="when">2023</span><span class="what">Helmholtz Initiative, Researchers at Risk Programme (GI-047), €27,329</span></li>
+    <li><span class="when">2020</span><span class="what">Member of the application team, SOLSTICE programme call, project Socially Just and Politically Robust Decarbonisation, €300,000</span></li>
+    <li><span class="when">2017</span><span class="what">Conference funding, federal state of Styria, €12,000</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Selected talks</h2>
+  <ul class="rows">
+    <li><span class="when">Nov 2026</span><span class="what"><span class="t">Can democracy be delegated?</span> ENCODE 2026, Rotterdam, the Netherlands</span></li>
+    <li><span class="when">Sep 2026</span><span class="what"><span class="t">Can democracy be delegated?</span> MANCEPT Workshops 2026, panel Doing Democracy Differently? Democratic Innovation in an Age of Backsliding, Manchester, UK</span></li>
+    <li><span class="when">Jun 2026</span><span class="what"><span class="t">AI and the value of public deliberation.</span> 2nd International Conference on Large-Scale AI Risks: Ethics, Safety, and Governance, KU Leuven, Belgium</span></li>
+    <li><span class="when">Mar 2026</span><span class="what"><span class="t">AI and the value of public deliberation.</span> Workshop on Tokenization and Digital Twins, Zug, Switzerland</span></li>
+    <li><span class="when">Nov 2025</span><span class="what"><span class="t">Commentary on ReasonAIde.</span> Workshop KI für deliberative Kulturen, Berlin, Germany</span></li>
+    <li><span class="when">Sep 2025</span><span class="what"><span class="t">The persisting relevance of the non-identity problem.</span> GAP.12, Düsseldorf, Germany</span></li>
+    <li><span class="when">Sep 2025</span><span class="what"><span class="t">Normative emissions accounting: A proposal.</span> GAP.12, Düsseldorf, Germany</span></li>
+    <li><span class="when">Apr 2025</span><span class="what"><span class="t">Risk and the sustainable transformation.</span> Guest lecture, Future Space for Sustainability and Science, Karlsruhe, Germany</span></li>
+    <li><span class="when">Apr 2025</span><span class="what"><span class="t">AI and the value of public deliberation.</span> Responsible AI: Promises, Pitfalls, and Practices, Munich, Germany</span></li>
+    <li><span class="when">Jan 2025</span><span class="what"><span class="t">The not-so-minor difference claim: The non-identity problem and compensation claims.</span> Workshop Climate Ethics above 1.5°C, Rotterdam, the Netherlands</span></li>
+    <li><span class="when">Jul 2024</span><span class="what"><span class="t">Compensating the losers of just transitions.</span> EnZO (Enabling Net Zero) Lecture Series, Karlsruhe, Germany</span></li>
+    <li><span class="when">Jun 2023</span><span class="what"><span class="t">Current issues in the emerging field of normative energy ethics.</span> Helmholtz Energy Conference 2023, Koblenz, Germany</span></li>
+    <li><span class="when">Jun 2023</span><span class="what"><span class="t">Normative emissions accounting.</span> Society for Applied Philosophy Annual Conference 2023, Antwerp, Belgium</span></li>
+    <li><span class="when">Jun 2023</span><span class="what"><span class="t">Stranded assets and legitimate expectations.</span> Energy Ethics Conference 2023, St Andrews, UK</span></li>
+    <li><span class="when">May 2023</span><span class="what"><span class="t">Stranded assets and legitimate expectations.</span> Normative Energy Ethics Lecture Series, Karlsruhe, Germany</span></li>
+    <li><span class="when">May 2023</span><span class="what"><span class="t">Saving lives and minimizing complaints.</span> Varieties of Risk AHRC project workshop, Stirling, UK</span></li>
+    <li><span class="when">Dec 2019</span><span class="what"><span class="t">Aggregation, principles, and risk.</span> Invited talk, philosophy colloquium, University of Kiel, Germany</span></li>
+    <li><span class="when">Oct 2019</span><span class="what"><span class="t">Contractualism and risk imposition.</span> Commentary, APA Central Division Meeting, Denver, USA</span></li>
+    <li><span class="when">Oct 2019</span><span class="what"><span class="t">What does it mean to have a right against climate change related risks?</span> IX Braga Meetings on Ethics and Political Philosophy, Braga, Portugal</span></li>
+    <li><span class="when">Aug 2019</span><span class="what"><span class="t">Stranded assets as a normatively significant burden.</span> International Wittgenstein Symposium, special session on climate change, Kirchberg am Wechsel, Austria</span></li>
+    <li><span class="when">Oct 2018</span><span class="what"><span class="t">Contractualism and non-identity.</span> Graduate student colloquium, Queen’s University, Kingston, Canada</span></li>
+    <li><span class="when">Oct 2018</span><span class="what"><span class="t">Justifying the imposition of risks of rights violations on future people on contractualist grounds.</span> MANCEPT Workshops in Political Theory 2018, Manchester, UK</span></li>
+    <li><span class="when">May 2018</span><span class="what"><span class="t">Commentary on Livia Luzzatto, Fixing the scope of climate justice.</span> Graz–Reading Workshop on Climate Ethics, Graz, Austria</span></li>
+    <li><span class="when">Mar 2018</span><span class="what"><span class="t">Two problems for bounded value function approaches.</span> Graz–Leuven Workshop on Political Philosophy, Graz, Austria</span></li>
+    <li><span class="when">Sep 2017</span><span class="what"><span class="t">Respect as justifiability to others and risk imposition.</span> MANCEPT Workshops in Political Theory 2017, Manchester, UK</span></li>
+    <li><span class="when">Sep 2017</span><span class="what"><span class="t">Stranding assets.</span> 11th ECPR General Conference, Oslo, Norway</span></li>
+    <li><span class="when">May 2017</span><span class="what"><span class="t">Duties to strand assets and compensatory claims.</span> Workshop Climate Ethics and Climate Economics: Risk, Uncertainty and Catastrophe Scenarios, University of Cambridge, UK</span></li>
+    <li><span class="when">Sep 2016</span><span class="what"><span class="t">Rights, risk, and paralysis.</span> Workshop Climate Ethics and Climate Economics: Risk, Uncertainty and Catastrophe Scenarios, London School of Economics, UK</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  <ul class="rows">
+    <li><span class="when">2024–2026</span><span class="what"><span class="t">Philosophical perspectives on risky technologies</span><span class="meta">PhD seminar, ITAS PhD teaching programme, KIT. Taught every year.</span></span></li>
+    <li><span class="when">2026</span><span class="what"><span class="t">Circular Factory lecture series, Environmental communication, Energy and environment, Financial mathematics in discrete time</span><span class="meta">Co-teaching ethics in engineering and science courses, Academy for Responsible Research, Teaching, and Innovation (ARRTI), KIT</span></span></li>
+    <li><span class="when">2026</span><span class="what"><span class="t">Contractualism and risk</span><span class="meta">Guest lecture in the course Climate Change and the Demands of Justice, Erasmus University Rotterdam</span></span></li>
+    <li><span class="when">2024</span><span class="what"><span class="t">The political philosophy of artificial intelligence</span><span class="meta">Seminar, KIT</span></span></li>
+    <li><span class="when">2024</span><span class="what"><span class="t">Ethics and resource cycles</span><span class="meta">Seminar, KIT</span></span></li>
+    <li><span class="when">2024</span><span class="what"><span class="t">Enabling Net Zero</span><span class="meta">Workshop, KIT</span></span></li>
+    <li><span class="when">2023</span><span class="what"><span class="t">Introduction to philosophy</span><span class="meta">Seminar, KIT</span></span></li>
+    <li><span class="when">2018</span><span class="what"><span class="t">Theories of intergenerational justice</span><span class="meta">Seminar, University of Graz</span></span></li>
+    <li><span class="when">2014</span><span class="what"><span class="t">Logic and theory of argumentation</span><span class="meta">Workshop, University of Göttingen</span></span></li>
+    <li><span class="when">2011–2013</span><span class="what"><span class="t">Philosophy of mind, Introduction to practical philosophy, Theory of action</span><span class="meta">Tutorials, University of Göttingen</span></span></li>
+    <li><span class="when">2008–2009</span><span class="what"><span class="t">Introduction to philosophy, Writing and presenting</span><span class="meta">Seminars, University of Bayreuth</span></span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Supervision</h2>
+  <ul class="rows">
+    <li><span class="when">2025–</span><span class="what">Daily supervisor, PhD project on the ethics of battery raw material mining</span></li>
+    <li><span class="when">2025–</span><span class="what">Daily supervisor, PhD project on the moral agency of AI systems</span></li>
+    <li><span class="when">2024–</span><span class="what">Mentor, PhD project on the ethics of raw material extraction and circular raw material cycles for the energy and mobility transition</span></li>
+    <li><span class="when">2022–</span><span class="what">Daily supervisor, PhD project on energy system resilience as a normative concept</span></li>
+    <li><span class="when">2023–2025</span><span class="what">Daily supervisor, PhD project on German anthropology of technology</span></li>
+    <li><span class="when">2024</span><span class="what">First examiner and supervisor, BA thesis on the climate damages tax as a forward-looking mechanism for the Loss and Damage Fund</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Editorial work</h2>
+  <ul class="rows">
+    <li><span class="when">In preparation</span><span class="what">Guest editor, with Jeroen Hopster, of a symposium on the philosophy of societal transformations, Moral Philosophy and Politics</span></li>
+    <li><span class="when">2018</span><span class="what">Guest editor, with Adriana Placani and Thomas Pölzler, of the special issue Ethics and Risks, Ethical Perspectives 25(3)</span></li>
+    <li><span class="when">2015</span><span class="what">Copy editor of Martin Weichold, Zwischen Reflex und Reflexion: Intelligenz und Rationalität im unreflektierten Handeln. Berlin: de Gruyter</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Organisation</h2>
+  <ul class="rows">
+    <li><span class="when">2027</span><span class="what">Beyond the crisis reflex? Potentials of long-term governance in research and practice. International conference, ITAS, KIT. Organising team.</span></li>
+    <li><span class="when">2026</span><span class="what">Workshop Resilience and Transformations, with Sophie Kuppler</span></li>
+    <li><span class="when">2025</span><span class="what">Workshop Philosophy of Societal Transformations, with Jeroen Hopster</span></li>
+    <li><span class="when">2024</span><span class="what">Forum on Philosophy, Engineering, and Technology (fPET 2024). Review committee.</span></li>
+    <li><span class="when">2017</span><span class="what">Conference The Ethics of Risk, Graz, with Adriana Placani and Thomas Pölzler</span></li>
+    <li><span class="when">2012</span><span class="what">Four-day workshop with Christine M. Korsgaard on normativity, Göttingen, with Johanna Mardt and Tim Fitschen</span></li>
+    <li><span class="when">2012–2015</span><span class="what">Assistant organiser of four conferences at the University of Göttingen, on Kant’s practical and theoretical philosophy, human rights, Kant’s legal and political philosophy, and relativism and disagreement</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Reviewing</h2>
+  <p class="block"><span class="label">Journals</span>&ensp;Ethical Perspectives, Journal of Applied Philosophy, The Journal of Philosophy, The Journal of Value Inquiry, Moral Philosophy and Politics, Philosophical Studies, Science and Engineering Ethics, TATuP, Zeitschrift für Praktische Philosophie</p>
+  <p class="block"><span class="label">Books</span>&ensp;Manuscript review for Taylor &amp; Francis; chapter review for the collected volume The Ethics of Inefficacy</p>
+</section>
+
+<section>
+  <h2>Public philosophy</h2>
+  <ul class="rows">
+    <li><span class="when">2026</span><span class="what"><span class="t">Justice in the shadow of uncertainty: Whom should we save?</span> Public lecture and discussion (in German), lecture series Wissenschaft &amp; Weisheit, Department of Philosophy, University of Zurich</span></li>
+    <li><span class="when">2024</span><span class="what">Commentary on the German Ethics Council’s statement on climate justice, with Laura García Portela, for the Science Media Center. Quoted in Süddeutsche Zeitung.</span></li>
+    <li><span class="when">2023</span><span class="what"><span class="t">Fair public transport.</span> Citizens’ workshop at technik.kontrovers 2023, Karlsruhe</span></li>
+    <li><span class="when">2016–2018</span><span class="what">Founding member and editor of the blog Climate Footnotes, with posts including “A carbon tax is not enough” (2017) and “Do future people have a right against current generations to be protected from climate change?” (2016)</span></li>
+    <li><span class="when">2016</span><span class="what"><span class="t">Klimawandel: Unsicherheiten, Schwellenwerte und Strategien.</span> Public lecture, Tag der Geisteswissenschaften, Graz</span></li>
+    <li><span class="when">2011</span><span class="what"><span class="t">Atomkraft oder Kernenergie.</span> Science-to-public campaign on energy policy, supply security and risk in the energy sector</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Work outside academia</h2>
+  <ul class="rows">
+    <li><span class="when">2020–2021</span><span class="what">Consultant, Evoloso Projektmanagement &amp; Consulting</span></li>
+    <li><span class="when">2006</span><span class="what">Intern, IBM Global Business Services, Bonn</span></li>
+  </ul>
+</section>
+
+</body>
+</html>

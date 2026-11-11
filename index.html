@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eike Düvel, philosopher</title>
 <meta name="description" content="Eike Düvel is a postdoctoral researcher in philosophy at the Karlsruhe Institute of Technology. He works in ethics and political philosophy, mainly on the ethics of risk, climate justice, and AI and democracy.">
+<link rel="canonical" href="https://eikeduevel.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://eikeduevel.com/">
+<meta property="og:title" content="Eike Düvel">
+<meta property="og:description" content="Postdoctoral researcher in philosophy at the Karlsruhe Institute of Technology, working on the ethics of risk, climate justice, and AI and democracy.">
+<meta property="og:image" content="https://eikeduevel.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Eike Düvel, with his name, affiliation and research areas">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
   :root {
@@ -120,6 +133,24 @@
   .projects .role { margin-top: 0.35rem; }
   .projects .meta { margin-top: 0.2rem; }
 
+  details.abstract { margin-top: 0.25rem; }
+  details.abstract summary {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    cursor: pointer; list-style: none;
+    font-family: var(--sans); font-size: 0.85rem; color: var(--storm);
+  }
+  details.abstract summary::-webkit-details-marker { display: none; }
+  details.abstract summary::before {
+    content: ""; width: 0.38rem; height: 0.38rem;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(-45deg); transition: transform 0.15s ease;
+  }
+  details.abstract[open] summary::before { transform: rotate(45deg); }
+  details.abstract summary:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+  details.abstract summary:focus-visible { outline: 2px solid var(--storm); outline-offset: 3px; border-radius: 2px; }
+  details.abstract p { margin: 0.45rem 0 0.2rem; font-size: 0.95rem; line-height: 1.55; max-width: 40rem; }
+  @media (prefers-reduced-motion: reduce) { details.abstract summary::before { transition: none; } }
+
   .plain { list-style: none; margin: 0; padding: 0; }
   .plain > li { margin: 0 0 0.7rem; }
   .plain > li:last-child { margin-bottom: 0; }
@@ -163,6 +194,7 @@
           <li><a href="mailto:eike.duevel@gmail.com">eike.duevel@gmail.com</a></li>
           <li><a href="cv.pdf">CV (PDF)</a></li>
           <li><a href="https://philpeople.org/profiles/eike-duvel">PhilPeople</a></li>
+          <li><a href="https://orcid.org/0000-0002-4798-3417">ORCID</a></li>
         </ul>
       </header>
 
@@ -181,14 +213,17 @@
           <li>
             <a class="title" href="https://doi.org/10.1007/s10677-026-10548-w">Fairness in emissions accounting: A moral responsibility approach</a>
             <span class="meta">With Laura García Portela. Ethical Theory and Moral Practice, 2026.</span>
+            <details class="abstract"><summary>Abstract</summary><p>In this paper we present a common approach to fair emissions accounting (Common Approach) and argue that it is misguided. Instead, we offer our Moral Responsibility Approach as an alternative. We argue that the primary consideration for choosing an emissions accounting mechanism from a fairness perspective ought to be who ought to take moral responsibility for emissions. We provide some criteria for moral responsibility in the context of climate change and present a moderate defense of CBEA as the mechanism that, on balance, best meets these criteria.</p></details>
           </li>
           <li>
             <a class="title" href="https://doi.org/10.1186/s13705-025-00560-w">The obligation to long-term governance: A philosophical analysis</a>
             <span class="meta">With Michael W. Schmidt. Energy, Sustainability and Society 16:3, 2026.</span>
+            <details class="abstract"><summary>Abstract</summary><p>Many of the problems currently facing our societies are long-term. Long-term problems are complex, often large-scale, and may require considerable planning and resources to avert undesirable outcomes in the (far) future. Consider issues such as climate change, nuclear waste disposal, and the sustainable management of ecosystems. The ability of a society to adequately address the most relevant problems depends on appropriate long-term governance, i.e., strategic, consistent, and coherent governance over an extended period of time. Serious obstacles are inherent in long-term governance. These include short election cycles, intergenerational trade-offs, and the uncertainties involved in long-term decision-making. Liberal democracies appear to encounter difficulties in providing adequate responses to pertinent long-term issues, such as climate change, due to the institutions’ current design, which primarily focuses on safeguarding the interests of the present generation. This paper introduces long-term governance as a distinct philosophical topic by defining it in relation to a novel perspective on long-term challenges. The paper defends an obligation to engage in long-term governance based on the basic rights of those who do not yet vote. This includes, in particular, an obligation to engage in research into long-term governance institutions.</p></details>
           </li>
           <li>
             <a class="title" href="https://doi.org/10.1002/wcc.910">The ethics of climate change loss and damage</a>
             <span class="meta">With Laura García Portela. WIREs Climate Change 15(6), 2024.</span>
+            <details class="abstract"><summary>Abstract</summary><p>In the last decade, the international community has become increasingly aware that some negative impacts of climate change cannot be prevented. During the COP19 in Warsaw in 2013, the parties who agreed to the Warsaw International Mechanism (WIM) acknowledged that there were already greater climate impacts than could be reduced by adaptation (UNFCCC, 2014). These impacts have been called “loss and damage”, and the policies and measures that deal with them are usually referred to as L&amp;D, or L&amp;D measures or policies. Since then, examples of loss and damage have unfortunately become abundant, but we lack a systematic approach to the ethical issues surrounding loss and damage. This article provides an overview of some of the ethical issues surrounding loss and damage in the context of climate change. We discuss what should count as loss and damage, how access to justice for loss and damage should be granted and their different rationale, as well as issues of noneconomic and nonanthropocentric loss and damage.</p></details>
           </li>
           <li>
             <a class="title" href="https://www.routledge.com/Environmental-Human-Rights-A-Political-Theory-Perspective/Oksanen-Dodsworth-ODoherty/p/book/9780367244637">Human rights-based precautionary approaches and risk imposition in the context of climate change</a>

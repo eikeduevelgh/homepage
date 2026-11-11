@@ -287,6 +287,18 @@
   </div>
   <footer>Last updated November 2026. <a href="privacy.html">Privacy</a></footer>
 </main>
-<script data-goatcounter="https://eikeduevel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  // Visitor counter (GoatCounter). Not loaded for visitors whose browser
+  // sends a Do Not Track or Global Privacy Control signal.
+  (function () {
+    var dnt = navigator.doNotTrack === '1' || window.doNotTrack === '1';
+    if (dnt || navigator.globalPrivacyControl === true) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://gc.zgo.at/count.js';
+    s.setAttribute('data-goatcounter', 'https://eikeduevel.goatcounter.com/count');
+    document.body.appendChild(s);
+  })();
+</script>
 </body>
 </html>
